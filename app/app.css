@@ -3,3 +3,5 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @custom-variant blue (&:where(.blue, .blue *));
 @custom-variant green (&:where(.green, .green *));
+@custom-variant yellow (&:where(.yellow, .yellow *));
+@custom-variant red (&:where(.red, .red *));

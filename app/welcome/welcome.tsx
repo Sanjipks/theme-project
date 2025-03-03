@@ -4,7 +4,7 @@ import logoLight from "./logo-light.svg";
 export function Welcome() {
   return (
     <main
-      className={`flex h-screen items-center bg-gray-200 dark:bg-gray-900 blue:bg-blue-800 green:bg-green-700 justify-center pt-16 pb-4`}
+      className={`flex h-screen items-center bg-gray-200 dark:bg-gray-900 blue:bg-blue-800 green:bg-green-700 yellow:bg-yellow-400 red:bg-red-700 justify-center pt-16 pb-4`}
     >
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
         <header className="flex flex-col items-center gap-9">

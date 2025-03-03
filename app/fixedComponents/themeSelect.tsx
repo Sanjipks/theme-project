@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const themes = ["light", "dark", "blue", "green"];
+const themes = ["light", "dark", "blue", "green", "yellow", "red"];
 
 const ThemeSelect = () => {
   const [theme, setTheme] = useState<string>(() => {
