@@ -39,35 +39,50 @@ const ThemeSelect = () => {
 
   return (
     <div className=" p-4">
-      <label className=" flex absolute flex-col bg-amber-50  cursor-pointer ">
+      <label className=" flex absolute flex-col cursor-pointer ">
         <div className="flex flex-col gap-0">
-          <p className="bg-amber-400">Select Theme</p>
+          <p className="">Select Theme</p>
           <div
             className={`flex h-6 w-auto ${
               theme === "dark"
                 ? "bg-gray-800"
                 : theme === "light"
                 ? "bg-gray-200"
-                : `bg-${theme}-800`
+                : `bg-${theme}-600`
             } rounded-full`}
             onClick={handleShowThemeOptions}
-          ></div>
+          />
         </div>
         {openThemeOptions && (
-          <div className="w-auto h-auto bg-white">
+          <div className="w-auto h-auto  border  border-b-cyan-300 p-1 bg-blue-400 rounded-md">
             {themes.map((themeOption) => (
               <div
                 key={themeOption.name}
-                className={`flex w-auto h-6 relative rounded-full `}
+                className={`flex flex-col p-1 `}
                 onClick={() => handleSelectTheme(themeOption.name)}
               >
-                <div>
-                  {" "}
-                  <span>
+                <div className="flex flex-row justify-between">
+                  <div>
                     {themeOption.name.charAt(0).toUpperCase() +
                       themeOption.name.slice(1)}
-                  </span>
-                  <div className={`flex b h-6 w-6`}></div>
+                  </div>
+                  <div
+                    className={`flex h-6 w-8   ${
+                      themeOption.color === "white"
+                        ? "bg-white hover:bg-gray-200"
+                        : themeOption.color === "black"
+                        ? "bg-black hover:bg-gray-700"
+                        : themeOption.color === "blue"
+                        ? "bg-blue-600 hover:bg-blue-800"
+                        : themeOption.color === "green"
+                        ? "bg-green-600 hover:bg-green-700"
+                        : themeOption.color === "yellow"
+                        ? "bg-yellow-500 hover:bg-yellow-400"
+                        : themeOption.color === "red"
+                        ? "bg-red-600 hover:bg-red-700"
+                        : "bg-white"
+                    } rounded-full`}
+                  ></div>
                 </div>
               </div>
             ))}
