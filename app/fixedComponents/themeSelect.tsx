@@ -40,11 +40,11 @@ const ThemeSelect = () => {
 
   return (
     <div className="p-4">
-      <label className=" flex absolute flex-col cursor-pointer ">
-        <div className="flex flex-col gap-0">
-          <p className="">Select Theme</p>
+      <label className=" flex absolute flex-col  ">
+        <div className="flex flex-row gap-0 items-center">
+          <p className="">Theme</p>
           <div
-            className={`flex h-6 w-auto ${
+            className={`flex h-6 w-6 m-2 cursor-pointer ${
               theme === "dark"
                 ? "bg-gray-700"
                 : theme === "light"
@@ -68,7 +68,7 @@ const ThemeSelect = () => {
                       themeOption.name.slice(1)}
                   </div>
                   <div
-                    className={`flex h-6 w-8   ${
+                    className={`flex h-6 w-6   ${
                       themeOption.color === "white"
                         ? "bg-white hover:bg-gray-200"
                         : themeOption.color === "black"
