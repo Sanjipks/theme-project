@@ -39,7 +39,7 @@ const ThemeSelect = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="m-2">
       <label className=" flex absolute flex-col  ">
         <div className="flex flex-row gap-0 items-center">
           <p className="">Theme</p>
