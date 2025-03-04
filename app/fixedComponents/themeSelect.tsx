@@ -31,6 +31,7 @@ const ThemeSelect = () => {
 
   const handleSelectTheme = (selectedtheme: string): void => {
     setTheme(selectedtheme);
+    setOpenThemeOptions(false);
   };
 
   const handleShowThemeOptions = (): void => {
@@ -38,7 +39,7 @@ const ThemeSelect = () => {
   };
 
   return (
-    <div className=" p-4">
+    <div className="p-4">
       <label className=" flex absolute flex-col cursor-pointer ">
         <div className="flex flex-col gap-0">
           <p className="">Select Theme</p>
