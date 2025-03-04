@@ -46,10 +46,10 @@ const ThemeSelect = () => {
           <div
             className={`flex h-6 w-auto ${
               theme === "dark"
-                ? "bg-gray-800"
+                ? "bg-gray-700"
                 : theme === "light"
-                ? "bg-gray-200"
-                : `bg-${theme}-600`
+                ? "bg-gray-50"
+                : `bg-${theme}-800`
             } rounded-full`}
             onClick={handleShowThemeOptions}
           />
