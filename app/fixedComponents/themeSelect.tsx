@@ -49,7 +49,15 @@ const ThemeSelect = () => {
                 ? "bg-gray-700"
                 : theme === "light"
                 ? "bg-gray-50"
-                : `bg-${theme}-800`
+                : theme === "blue"
+                ? "bg-blue-400"
+                : theme === "green"
+                ? "bg-green-400"
+                : theme === "yellow"
+                ? "bg-yellow-200"
+                : theme === "red"
+                ? "bg-red-400"
+                : "bg-gray-200"
             } rounded-full`}
             onClick={handleShowThemeOptions}
           />
